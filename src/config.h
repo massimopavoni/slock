@@ -1,9 +1,9 @@
 static const char *colorname[NUMCOLS] = {
 	[BACKGROUND] =   "black",    /* after initialization */
 	[INIT] = "#2d2d2d",          /* after initialization */
-	[INPUT] =  "#008822",        /* during input */
-	[FAILED] = "#cc3333",        /* wrong password */
-	[CAPS] = "#005577",          /* CapsLock on */
+	[INPUT] =  "#008800",        /* during input */
+	[FAILED] = "#880000",        /* wrong password */
+	[CAPS] = "#0000bb",          /* CapsLock on */
 };
 
 /* treat a cleared input like a wrong password (color) */
