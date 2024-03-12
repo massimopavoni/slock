@@ -1,12 +1,13 @@
 static const char *colorname[NUMCOLS] = {
-	[BACKGROUND] =   "black",     /* after initialization */
-	[INIT] = "#2d2d2d",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
+	[BACKGROUND] =   "black",    /* after initialization */
+	[INIT] = "#2d2d2d",          /* after initialization */
+	[INPUT] =  "#008822",        /* during input */
+	[FAILED] = "#cc3333",        /* wrong password */
+	[CAPS] = "#005577",          /* CapsLock on */
 };
 
 /* treat a cleared input like a wrong password (color) */
-static const int failonclear = 1;
+static const int failonclear = 0;
 
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 48;
