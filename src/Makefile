@@ -20,7 +20,7 @@ slock: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
 
 clean:
-	rm -f slock ${OBJ} slock-${VERSION}.tar.gz
+	rm -f slock config.h ${OBJ} slock-${VERSION}.tar.gz
 
 dist: clean
 	mkdir -p slock-${VERSION}
@@ -38,6 +38,7 @@ install: all
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" <slock.1 >${DESTDIR}${MANPREFIX}/man1/slock.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/slock.1
+	make clean
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/slock
